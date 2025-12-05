@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haridwar Travel Assistant</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Haridwar Travel Assistant</h1>
+      <p>Your local guide for Haridwar, Rishikesh, and nearby places.</p>
+    </header>
+
+    <div class="chips">
+      <button class="chip" data-msg="Plan a 1-day Haridwar itinerary">1-day itinerary</button>
+      <button class="chip" data-msg="Plan a 2-day Haridwar and Rishikesh itinerary">2-day itinerary</button>
+      <button class="chip" data-msg="What time is the Ganga Aarti at Har Ki Pauri?">Ganga Aarti</button>
+      <button class="chip" data-msg="How do I visit Mansa Devi and Chandi Devi with ropeway?">Temples + Ropeway</button>
+      <button class="chip" data-msg="Best time to visit Haridwar?">Best time</button>
+      <button class="chip" data-msg="Local transport options in Haridwar">Transport</button>
+    </div>
+
+    <main id="chat">
+      <div class="message bot">
+        Hi! I can help you plan your Haridwar trip—temples, Ganga Aarti, nearby Rishikesh, and more. What would you like to do?
+      </div>
+    </main>
+
+    <form id="form">
+      <input id="input" type="text" placeholder="Ask about itineraries, timings, transport, food..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>

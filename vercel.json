@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "src/api/$1"
+    },
+    {
+      "src": "/chat",
+      "dest": "src/routes/chat.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "src/ui/index.html"
+    }
+  ],
+  "env": {
+    "CLAUDE_API_KEY": "@claude_api_key"
+  },
+  "rewrites": [
+    { "source": "/", "destination": "/src/ui/index.html" },
+    { "source": "/styles.css", "destination": "/src/ui/styles.css" },
+    { "source": "/app.js", "destination": "/src/ui/app.js" },
+    { "source": "/api/(.*)", "destination": "/api/index.py" }
+  ]
+}

@@ -1,0 +1,24 @@
+[tool]
+name = "haridwar-chatbot"
+version = "0.1.0"
+description = "A chatbot focused on Haridwar and nearby places, utilizing the Claude API."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[project]
+dependencies = [
+    "flask",
+    "requests",
+    "pydantic"
+]
+
+[tool.poetry]
+name = "haridwar-chatbot"
+version = "0.1.0"
+description = "A chatbot focused on Haridwar and nearby places, utilizing the Claude API."
+authors = ["Your Name <your.email@example.com>"]
+license = "MIT"
