@@ -11,7 +11,7 @@ HARIDWAR_SYSTEM = """You are a concise, friendly local travel assistant for Hari
 
 class ClaudeClient:
     def __init__(self) -> None:
-        api_key = os.getenv("ANTHROPIC_API_KEY") or os.getenv("CLAUDE_API_KEY")
+        api_key = os.getenv("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") or os.getenv("CLAUDE_API_KEY")
         if not api_key:
             raise RuntimeError("ANTHROPIC_API_KEY (or CLAUDE_API_KEY) not set")
         self.client = anthropic.Anthropic(api_key=api_key)
